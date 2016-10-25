@@ -1,0 +1,36 @@
+body {
+  font-family:sans-serif;
+  text-align: center;;
+background-color: deepskyblue;
+}
+
+#emailsignup{
+  border-radius: -110px;
+}
+#lob{
+  height: 30px;
+}
+
+
+#lob:hover{
+background-color:turquoise;
+
+
+}
+#pass{
+  padding-top: 30px;
+}
+#name{
+  padding-top: 50px;
+}
+#user{
+  text-align: center;
+
+}
+#signinB:hover{
+  background-color: turquoise;
+
+}
+#signinB{
+  height: 3s0px;
+}
