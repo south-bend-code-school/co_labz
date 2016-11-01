@@ -25,7 +25,8 @@ $('#messageInput').keypress(function (e) {
 });
 
 myDataRef.on('child_added', function(snapshot) {
-  if(snapshot.key !== "Description"){
+  console.log(snapshot.key);
+  if(snapshot.key !== "Description" && snapshot.key !== "ImageURL"){
     var message = snapshot.val();
     displayChatMessage(message.name, message.text);
 }

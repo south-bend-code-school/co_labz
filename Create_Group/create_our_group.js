@@ -16,7 +16,11 @@ var dbRef = firebase.database().ref();
 $('#createButton').click(function (e) {
     var name = $('#nameInput').val();
     var description = $('#descriptionInput').val();
-    dbRef.child(name).set({'Description':description});
+    var imageURL = $('#topicImage').val();
+    var dict ={};
+    dict['Description'] = description;
+    dict['ImageURL'] = imageURL;
+    dbRef.child(name).set(dict);
     location.assign('chat.html?room='+name);
 });
 
