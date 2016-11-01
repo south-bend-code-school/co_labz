@@ -11,7 +11,7 @@ var config = {
 firebase.initializeApp(config);
 
 //to get the chat room
-var chatroom = location.search.split('room=')[1];
+var chatroom = decodeURI(location.search.split('room=')[1]);
 myDataRef = firebase.database().ref(chatroom);
 //myDataRef = new Firebase('https://fiery-heat-2588.firebaseio.com');
 
@@ -25,8 +25,10 @@ $('#messageInput').keypress(function (e) {
 });
 
 myDataRef.on('child_added', function(snapshot) {
-  var message = snapshot.val();
-  displayChatMessage(message.name, message.text);
+  if(snapshot.key !== "Description"){
+    var message = snapshot.val();
+    displayChatMessage(message.name, message.text);
+}
 })
 
 function displayChatMessage(name, text) {
