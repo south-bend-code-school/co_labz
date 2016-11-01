@@ -1,0 +1,45 @@
+body {
+  background-color: darkslategray !important;
+}
+
+button {
+  width: 100px !important;
+  font-size: 21px !important;
+  height:30px !important;
+  color: black !important;
+}
+
+#descriptioninput {
+  font-size: 21px !important;
+  height: 100px !important;
+  color: black !important;
+}
+
+h1{
+  font-size: 50px !important;
+  color: black !important;
+}
+h2{
+  color: black !important;
+}
+#logo{
+  text-align: right;
+}
+#banner {
+position: absolute;
+top: 0;
+left: 0;
+background-color: black;
+width: 100%;
+margin-bottom: 100px;
+}
+#banner-content {
+width: 100%;
+margin: 0 auto;
+padding: 15px;
+text-align:right;
+}
+.row{
+    background-color:black !important;
+}
+

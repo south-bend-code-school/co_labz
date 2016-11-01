@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Chat</title>
+
+    <link href="chat.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <!--JQuery CDN--->
+  <script   src="http://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script> function LoadTopicHeader(){
+        var topicHeader = document.createElement('h1');
+        var tmp = location.search.split('room=')[1];
+        var room = decodeURI(tmp.split('&name=')[0]);
+        var headerText = document.createTextNode(room+" Chat Room");
+        topicHeader.appendChild(headerText);
+        document.getElementById('header').appendChild(topicHeader);
+    }
+    </script>
+
+</head>
+
+<body onload="LoadTopicHeader()">
+  <div id="banner">
+    <div id="banner-content">
+
+    </div>
+  </div>
+  </div>
+
+   <div class="row">
+     <div class="col-sm-6">
+       <ul class="nav nav-pills">
+         <li role="presentation" class="dropdown">
+           <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+             <img src="http://www.tax-consulting-group-san-diego.com/images/taxes-menu-icon.png" width="30" height="30"> <span class="caret"></span>
+           </a>
+           <ul class="dropdown-menu">
+
+           <a href="create_our_group.html">
+             <li>Create Group</li>
+           </a>
+           <a href="groups.html">
+             <li>Groups</li>
+           </a>
+           <a href="About.html">
+             <li>About</li>
+           </a>
+           </ul>
+         </li>
+       </ul>
+     </div>
+
+    <!--Image-->
+   <div class="col-sm-6">
+  <div id="logo">
+    <img src="colabz-logo-white.png">
+  </div>
+        
+    </div>
+  </div>
+    <div id="header">
+    </div>
+    <div id='messagesDiv'>
+    </div>
+    <div id="middle">
+      <input type='text' id='nameInput' placeholder="Name">
+      <input type='text' id='messageInput' placeholder="Message">
+    </div>
+    <!--This must be the last line-->
+    <script src="./chat.js"></script>
+  </body>
+</html>

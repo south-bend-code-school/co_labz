@@ -1,0 +1,104 @@
+.box {
+  width: 13%;
+  height: 175px;
+  background-image:url("https://placeholdit.imgix.net/~text?txtsize=28&bg=0099ff&txtclr=ffffff&txt=300%C3%97300&w=300&h=300&fm=png");
+  display:inline-block;
+  background-size: cover;
+  margin-bottom: .5%
+}
+
+.vertbox {
+
+}
+body{
+    background-color: darkslategray !important;
+}
+#logo{
+    text-align:right;
+}
+#middle{
+padding-left: 100px;
+}
+
+.boxes {
+padding-left: 45%
+}
+
+h4{
+  text-align: right;
+}
+
+h2{
+  text-align: center;
+}
+
+.dropbtn {
+    background-color: green;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color:red;
+}
+
+.dropdown-menu{
+color: lightgrey !important;
+background-color: black !important;
+}
+
+ul li {
+  color: lightgrey !important;
+  background-color: black !important;
+}
+
+.dropdown-toggle {
+  background-color: black !important;
+}
+
+#banner {
+position: absolute;
+top: 0;
+left: 0;
+background-color: black;
+width: 100%;
+margin-bottom: 100px;
+}
+#banner-content {
+width: 100%;
+margin: 0 auto;
+padding: 15px;
+text-align:right;
+}
+.row{
+    background-color:black !important;
+}

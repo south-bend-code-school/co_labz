@@ -1,0 +1,52 @@
+body {
+background-color: darkslategray !important;
+color: black !important;
+}
+h1{
+    color:black !important;
+}
+h2{
+    color:black !important;
+}
+#code {
+  text-align:center;
+}
+#name {
+  text-align: center;
+}
+#header{
+    text-align: center;
+}
+#middle {
+  text-align:center;
+
+}
+#messagesDiv{
+  text-align: left;
+  padding-left: 500px;
+}
+#title{
+  text-align: center;
+}
+.row{
+    background-color: black !important;
+}
+#logo{
+    text-align:right;
+}
+#banner {
+position: absolute;
+top: 0;
+left: 0;
+background-color: black;
+width: 100%;
+margin-bottom: 100px;
+}
+#banner-content {
+width: 100%;
+margin: 0 auto;
+padding: 15px;
+text-align:right;
+}
+
+
