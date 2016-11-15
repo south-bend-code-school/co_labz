@@ -1,9 +1,9 @@
 body {
-background-color: darkslategray !important;
+/*background-color: darkslategray !important;*/
 color: lightgrey !important;
 text-align: left;
 font-weight: bold;
-/*background-image: url(https://visitsouthbend.com/wp-content/uploads/2015/06/5.22.15-SB150-31-1-1000x563.jpg);*/
+background-image: url(./the_team.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 background-attachment: fixed;
@@ -11,9 +11,10 @@ background-attachment: fixed;
 
 #vp {
 margin-left: 200px;
-margin-top: 100px;
-margin-right: 556px;
+margin-top: 300px;
+margin-right: 375px;
 margin-bottom: 100px;
+
 padding-bottom: 100px black;
 background-color: black;
 padding: 25px;
